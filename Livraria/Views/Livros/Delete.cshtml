@@ -1,0 +1,60 @@
+﻿@model Livraria.Models.Livros
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Deletar</h2>
+
+<h3>Certeza que deseja apagar este?</h3>
+<fieldset>
+    <legend>Livros</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nome)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Autor)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Autor)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Ano)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Ano)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Categoria)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Categoria)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Editora)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Editora)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Paginas)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Paginas)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

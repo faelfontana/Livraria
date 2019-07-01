@@ -1,0 +1,57 @@
+﻿@model Livraria.Models.Livros
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes</h2>
+
+<fieldset>
+    <legend>Livros</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nome)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Autor)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Autor)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Ano)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Ano)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Categoria)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Categoria)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Editora)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Editora)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Paginas)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Paginas)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id=Model.Id_Livro }) |
+    @Html.ActionLink("Voltar para Lista", "Index")
+</p>
